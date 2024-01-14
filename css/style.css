@@ -261,7 +261,7 @@ div#ticker-flex:before {
 }
 @media (max-width:736px) {
     .black .hedding{
-            height: 8rem;
+            height: 5rem;
     }
 }
 @media (min-width:780px) {
