@@ -9,7 +9,7 @@
   btn.classList.add('text-active');
   images.src = './image/slide-1.jpg';
   images.style.display = 'block';
-  pera.innerText = '1 If life is so blue, then select another colour from the rainbow';
+  pera.innerText = "In the canvas of creativity, a graphic designer's thoughts brush strokes of innovation, where ideas bloom into visually captivating masterpieces.";
 
   function slideimage(n) {
     // Reset opacity for the buttons
@@ -31,7 +31,7 @@
       btn.classList.remove('text-active');
       btn3.classList.remove('text-active');
       animateTwo();
-      images.src = './image/slide2.jpg';
+      images.src = './image/slide2.jpeg';
       images.style.display = 'block';
       btn2.classList.add('text-active');
       btn2.style.transition = ' all 1s'
@@ -51,15 +51,15 @@
   }
 
   function animateOne() {
-    animateText('1 If life is so blue, then select another colour from the rainbow');
+    animateText("In the canvas of creativity, a graphic designer's thoughts brush strokes of innovation, where ideas bloom into visually captivating masterpieces.");
   }
 
   function animateTwo() {
-    animateText('2 If the sky is grey, paint it your favorite color');
+    animateText("Simplify the visual chaos; a graphic designer's art lies in elegance born from simplicity.");
   }
 
   function animateThree() {
-    animateText('3 Life is a canvas, throw all the paint you can on it');
+    animateText("Crafting visual poetry, a graphic designer transforms imagination into pixelated masterpieces, weaving creativity into every design stroke.");
   }
 
   function animateText(content) {

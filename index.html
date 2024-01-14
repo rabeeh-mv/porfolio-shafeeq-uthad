@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container main-bg ">
+  <div class="container imgset main-bg ">
     <header class="pt-3">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,13 +30,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#About-section">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" href="#Project-section">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="#Project-section">Contact us</a>
             </li>
             <a href="" class="d-md-none">
               <div id="hireme-btn" class="hireme-btn">Hire Me</div>
@@ -58,10 +58,13 @@
         <div class="ticker flex-section" id="ticker-flex"></div>
         <marquee behavior="" direction="left">MOHAMED SHAFEEQ.K</marquee>
       </div>
+      <div class="main-image">
+        <img src="./image/MAIN-PHOTO.png" width="100%"  alt="" srcset="">
+      </div>
     </section>
   </div>
   <!-- about page start -->
-<section>
+<section id="About-section" style="margin-bottom: 60px;">
   <div class="black">
   <div class="container black">
   <div class="row">
@@ -72,7 +75,7 @@
         <p class="skiills">Freelance <br>
           graphic designer & Typist</p>
           <p>Pursue an exhilarating career opportunity to fully utilize, improve my training and skills, while making a significant contribution to the success of the organization.</p>
-        <p class="last-text"><span style="font-weight: 500;">Certifications</span><br>
+        <p class="last-text"><span style="font-weight: 700;">Certifications</span><br>
           Desktop Publishing (DTP Course) -2009 <br>
           Diploma in Arabic Language (NCPUL) - 2013 <br>
           Diploma in Urdu Language (NCPUL) - 2014 <br>
@@ -91,7 +94,7 @@
 </div>
 <!-- aboutpage end-head -->
 <!-- portfoliyo start page -->
-<section>
+<section id="Project-section">
 <div class="container">
   <div class="row pb-5">
     <div class="portfolio-content col-12 col-md-8 ">
@@ -174,9 +177,9 @@
     <div class="row">
       <div class="col-md-6 text-div d-block">
         
-        <h1 id="add-btn" class="text-in-slider" onclick="slideimage(1) ,animateOne()">DEFINE</h1>
-        <h1 id="add-btn2" class="text-in-slider" onclick="slideimage(2)">DESIGN</h1>
-        <h1 id="add-btn3" class="text-in-slider" onclick="slideimage(3)">DELIVER</h1>
+        <h1 id="add-btn" class="text-in-slider" onclick="slideimage(1) ,animateOne()">THINK</h1>
+        <h1 id="add-btn2" class="text-in-slider" onclick="slideimage(2)">SIMPLE</h1>
+        <h1 id="add-btn3" class="text-in-slider" onclick="slideimage(3)">CREATIVE</h1>
       
         <div class="comingpera"  >
           <p id="display-content" class="pera text-light"></p>
@@ -219,7 +222,7 @@
   <!-- finer page end -->
 
   <!-- footer section start-->
-  <section>
+  <section id="Contact-section">
     <div class="container">
       <div class="row">
         <div class="footer-container col-md-6">
@@ -227,7 +230,7 @@
             <div class="footer-copyright d-flex justify-content-center align-center p-2" id="footer-copyright" name="Footer Attribution">
               <span class="copyright-text">
                 Design by -
-                <a href="">apostilo</a>
+                <a href="" style="text-decoration: none; color: black;"  >apostilo</a>
               </span>
             </div>
           </div>

@@ -26,7 +26,9 @@ body {
     background-color: #dadce0;
     overflow: hidden;
 }
-
+.container .imgset{
+    position: relative;
+}
 ul {
     list-style: none;
 }
@@ -112,7 +114,37 @@ header nav {
 .logo {
     padding-left: 25px;
 }
-
+.main-image{
+    top: 20px;
+    width: 60%;
+    height: 60vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-image img{
+    top: 4.9rem;
+    z-index: 2000;
+    position: absolute;
+}
+@media (max-width:1000px) {
+    .main-image img{top: 10rem;}
+}
+@media (max-width:767px) {
+    .main-image img{top: 9.5rem;}
+}
+@media (max-width:500px) {
+    .main-image img{
+        top: 5.4rem;
+    }
+}
+@media (max-width:383px) {
+    .main-image img{
+        top: 4.9rem;
+    }
+}
 .hireme-btn {
     border: 2px solid black;
     border-radius: 11px;
@@ -146,6 +178,7 @@ marquee {
     font-family: 'myFirstFont';
     /* DELIRIUM NEON NCV, DELIRIUM NCV ,Muhaqu*/
     /* font-weight: 700; */
+    margin-top: -30px;
     font-size: 29vw;
     z-index: 1;
 
@@ -196,8 +229,10 @@ div#ticker-flex:before {
 
 /* page about */
 .black{
+    margin-top: -30px;
     background-color: black;
     color: white;
+    z-index: 3000;
     /* border-top-left-radius:10px;
     border-top-right-radius: 10px; */
 }
@@ -311,10 +346,10 @@ div#ticker-flex:before {
     }
     
 }
-section{
+/* section{
     margin-top: 60px;
 
-}
+} */
 
 /* portfolio page */
 .portfolio-content p {
