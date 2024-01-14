@@ -126,7 +126,7 @@ header nav {
 }
 .main-image img{
     top: 4.9rem;
-    z-index: 100;
+    z-index: 1;
     position: absolute;
 }
 @media (max-width:1000px) { 
