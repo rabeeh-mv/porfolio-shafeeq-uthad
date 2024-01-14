@@ -16,6 +16,11 @@ body {
     /* src: url('../font/PostermanPersonalUseRegular-rgOE7.otf'); */
     /* src: url('../font/DeliriumNcv-Vm5e.ttf'); */
 }
+@font-face {
+    font-family: 'mysecontFont';
+    src: url('../font/PostermanPersonalUseRegular-rgOE7.otf');
+    /* src: url('../font/DeliriumNcv-Vm5e.ttf'); */
+}
 .container {
     position: relative;
     background-color: #dadce0;
@@ -219,7 +224,7 @@ div#ticker-flex:before {
 }
  .black .aroww{
     display: none;
-}
+}ś
 .black .arrow img{
     display: none;
 }
@@ -237,7 +242,7 @@ div#ticker-flex:before {
 }
 
 .skil-slider {
-    font-family: 'myFirstFont';
+    font-family: 'mysecontFont';
     padding-top: 40px;
     /* padding-bottom: 20px; */
     /* DELIRIUM NEON NCV, DELIRIUM NCV ,Muhaqu*/
@@ -283,7 +288,7 @@ div#ticker-flex:before {
         right: 0;
     }
     .container.black .last-text{
-        margin-top: 100px;
+        margin-top: 10px;
        
     }
     
@@ -388,6 +393,13 @@ height: 50%;
 position: absolute;
 bottom: 0;
 }
+.rigt-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    width: 40%;
+}
 .main-box:hover .hide-text{
 height: 0;
 }
@@ -418,18 +430,26 @@ bottom: 0;
 top: 100%;
 position: relative;
 transition: all 1s ease-out;
-background-image: url("../image/slide-1.jpg");
+background-image: url("../image/poster-1.jpg");
+background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size:cover;
 height: 100%;
 }
 .img-box-top .hid-img2-box{
-    background-image: url("../image/slide2.jpg");
+    background-image: url("../image/logo.jpg");
     top: 100%;
 position: relative;
 transition: all 1s ease-out;
 height: 100%;
 }
 .img-box-top .hid-img3-box{
-    background-image: url("../image/slide3.jpg");
+    background-image: url("../image/illus.jpg");
+    background-size:100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size:cover;
     top: 100%;
 position: relative;
 transition: all 1s ease-out;
@@ -461,7 +481,11 @@ border: 10px solid #c9c9c9;
 .skil-text{
 margin-right: 30px;
 }
-
+.no-link{
+    color:inherit;
+    text-decoration:none;
+    pointer-events:none;
+}
 
 /* portfolio page end */
 
@@ -515,7 +539,7 @@ margin-right: 30px;
     position: relative;
     font-family: 'myFirstFont';
     line-height: .7;
-    font-size: 8rem;
+    font-size: 10.5rem;
     font-weight: 100;
 }
 .peragrap{
@@ -561,10 +585,17 @@ margin-right: 30px;
 
 .row.wraper{
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aroww img{
+    padding-top: 30px;
 }
 
 .end-head {
-    font-size: 3.5vw;
+    width: 90%;
+    font-size: 4.5vw;
     font-weight: 400;
 }
 

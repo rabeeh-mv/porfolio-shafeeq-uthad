@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-weight: 500;
+  color: #4c4c4c;
+  outline: none;
+  visibility: visible;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.section-padding {
+  padding-top: 80px;
+}
+
+.gallery-section {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #8e8e8e;
+} 
+
+.filter {
+  text-align: center;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px 4px 4px 0;
+  display: inline-block;
+  color: #003;
+  background: #eee;
+  border: 1px solid #8e8e8e;
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn:hover,.btn-active {
+  background: #8e8e8e;
+  color: #fff;
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  max-width: 1320px;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  /* gap: 14px; */
+}
+.gallery a {
+  display: flex;
+}
+.gallery img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px 10px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.sets .hide,
+.sets .pophide {
+  width: 0%;
+  opacity: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 500;
+  right: 25px;
+  top: 25px;
+  color: white;
+  transition: 0.5s linear;
+  padding: 8px 40px;
+  border-radius: 25px;
+  background: transparentg;
+  outline-offset: -6px;
+  outline: 2px solid #fff;
+}
+.closeBtn:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+  outline: 2px solid #000;
+}
+
+.openDiv {
+  width: 100%;
+  height: 100vh;
+  background: #000000e7;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  z-index: 9999;
+}
+.imgPreview {
+  width: 70%;
+  object-fit: scale-down;
+  max-height: 40vw;
+  height: auto;
+}
+.prevButton,
+.nextButton {
+  transition: 1s linear;
+  padding: 10px 35px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  background: #0005;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 10px;
+}
+.prevButton:hover,
+.nextButton:hover {
+  background: #fff;
+  color: black;
+}
+
+/* resposive CSS Code */
+
+@media (max-width: 1199px) {
+  .section-padding {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .section-padding {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 36px;
+  }
+  .gallery img {
+    margin: 8px 8px;
+    width: 175px;
+  }
+  .closeBtn {
+    padding: 6px 25px;
+  }
+  .prevButton,
+  .nextButton {
+    font-size: 18px;
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 540px) {
+  .section-padding {
+    padding-top: 30px;
+  }
+  
+  .gallery img {
+    margin: 8px 6px;
+    width: 155px;
+  }
+
+  .closeBtn {
+    font-size: 18px;
+    border-radius: 15px;
+  }
+  .prevButton,
+  .nextButton {
+    font-size: 18px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  .imgPreview {
+    width: 90%;
+    max-height: 50vh;
+    height: auto;
+  }
+  
+}
+    </style>
+</head>
+<body>
+    
+    <div class="section-padding gallery-section" id="gallery">
+        <div class="container">
+          <!-- Section Title Start -->
+          <div class="text-center">
+            <h2 class="title">Our works</h2>
+            <p>Some Random Projects</p>
+          </div>
+          <!-- Section Title End -->
+
+          <div id="btncontainer" class="filter">
+            <a class="btn btn-active" href="#all">ALL</a>
+            <a class="btn" href="#Posters">Posters</a>
+            <a class="btn" href="#Logos">Logos</a>
+            <a class="btn" href="#Illustration">Illustration</a>
+          </div>
+
+          <!-- Gallery Section Start -->
+
+          <div class="gallery sets">
+            <a class="all Posters"><img src="./image/imagegallery/poster1.jpg"/></a>
+
+            <a class="all Posters"><img src="./image/imagegallery/poster2.jpg"/></a>
+
+            <a class="all Posters"><img src="./image/imagegallery/poster3.jpg"/></a>
+            
+            <a class="all Posters"><img src="./image/imagegallery/poster4.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster5.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster6.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster7.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster8.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster9.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster10.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster11.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster12.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster13.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster14.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster15.jpg"/></a>
+            <a class="all Posters"><img src="./image/imagegallery/poster16.jpg"/></a>
+            
+            <a class="all Logos"><img src="./image/imagegallery/logo-1.jpg"/></a>
+            <a class="all Logos"><img src="./image/imagegallery/logo6.jpg"/></a>
+            <a class="all Logos"><img src="./image/imagegallery/logo2.jpg"/></a>
+            <a class="all Logos"><img src="./image/imagegallery/logo3.jpg"/></a>
+            <a class="all Logos"><img src="./image/imagegallery/logo5.jpg"/></a>
+            <a class="all Logos"><img src="./image/imagegallery/logo7.jpg"/></a>
+            
+            
+            <a class="all Illustration"><img src="./image/imagegallery/illustration1.jpg"/></a>
+            <a class="all Illustration"><img src="./image/imagegallery/illustration2.jpg"/></a>
+            <a class="all Illustration"><img src="./image/imagegallery/illustration3.jpg"/></a>
+            <a class="all Illustration"><img src="./image/imagegallery/illustration4.jpg"/></a>
+            <a class="all Illustration"><img src="./image/imagegallery/illustration5.jpg"/></a>
+            
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+      <script>
+        $(".filter a").click(function (e) {
+        e.preventDefault();
+        var a = $(this).attr("href");
+        a = a.substr(1);
+        $(".sets a").each(function () {
+          if (!$(this).hasClass(a) && a != "") $(this).addClass("hide");
+          else $(this).removeClass("hide");
+        });
+
+    
+
+// Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("btncontainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        var current = document.getElementsByClassName("btn-active");
+        current[0].className = current[0].className.replace(" btn-active", "");
+        this.className += " btn-active";
+
+    }
+});
+
+
+let imgs = document.querySelectorAll("img");
+      let count;
+      imgs.forEach((img, index) => {
+        img.addEventListener("click", function (e) {
+          if (e.target == this) {
+            count = index;
+            let openDiv = document.createElement("div");
+            let imgPreview = document.createElement("img");
+            let butonsSection = document.createElement("div");
+            butonsSection.classList.add("butonsSection");
+            let closeBtn = document.createElement("button");
+            let nextBtn = document.createElement("button");
+            let prevButton = document.createElement("button");
+            prevButton.innerText = "Previous";
+            nextBtn.innerText = "Next";
+
+            nextBtn.classList.add("nextButton");
+            prevButton.classList.add("prevButton");
+            nextBtn.addEventListener("click", function () {
+              if (count >= imgs.length - 1) {
+                count = 0;
+              } else {
+                count++;
+              }
+
+              imgPreview.src = imgs[count].src;
+            });
+
+            prevButton.addEventListener("click", function () {
+              if (count === 0) {
+                count = imgs.length - 1;
+              } else {
+                count--;
+              }
+
+              imgPreview.src = imgs[count].src;
+            });
+
+            closeBtn.classList.add("closeBtn");
+            closeBtn.innerText = "Close";
+            closeBtn.addEventListener("click", function () {
+              openDiv.remove();
+            });
+
+            imgPreview.classList.add("imgPreview");
+            imgPreview.src = this.src;
+
+            butonsSection.append(prevButton, nextBtn);
+            openDiv.append(imgPreview, butonsSection, closeBtn);
+
+            openDiv.classList.add("openDiv");
+
+            document.querySelector("body").append(openDiv);
+          }
+        });
+      });
+      </script>
+</body>
+</html>
