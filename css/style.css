@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #dadce0;
+}
+/* font */
+@font-face {
+    font-family: 'myFirstFont';
+    src: url('../font/Extenda-40-Hecto-trial.ttf');
+    /* src: url('../font/PostermanPersonalUseRegular-rgOE7.otf'); */
+    /* src: url('../font/DeliriumNcv-Vm5e.ttf'); */
+}
+.container {
+    position: relative;
+    background-color: #dadce0;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 0 19px;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+    border-radius: 15px;
+    /* margin-top: 20px; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    text-align: center;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar {
+    align-items: center;
+    z-index: 20;
+    opacity: 0;
+	animation: fadeIn 1s ease-in both;
+}
+#nav-head{
+    opacity: 0;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+#list li{
+    opacity: 0;
+	animation: fadeIn 1s ease-in both;
+}
+#list li:nth-child(2) {
+	animation-delay: 0.5s;
+}
+#list li:nth-child(3) {
+	animation-delay: 0.5s;
+}
+#list li:nth-child(4) {
+	animation-delay: 0.5s;
+}
+#list li:nth-child(5) {
+	animation-delay: 0.5s;
+}
+
+#hireme-btn{
+    opacity: 0;
+	animation: fadeIn 1.5s ease-in both;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.navbar-nav{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.logo {
+    padding-left: 25px;
+}
+
+.hireme-btn {
+    border: 2px solid black;
+    border-radius: 11px;
+    padding: 12px 24px;
+    margin-right: 12px;
+    color: black;
+}
+
+.text-panel{
+    font-weight: 400;
+    opacity: 0;
+	animation: fadeIn 1s ease-in both;
+
+}
+
+/* bg-text sliding start */
+marquee:before {
+    left: 0;
+    width: 20px;
+    background: linear-gradient(to right, #FFEBEE -100%, transparent 100%);
+}
+
+marquee:after {
+    right: 0;
+    width: 20px;
+    background: linear-gradient(to left, #FFEBEE -100%, transparent 100%);
+}
+
+marquee {
+    font-family: 'myFirstFont';
+    /* DELIRIUM NEON NCV, DELIRIUM NCV ,Muhaqu*/
+    /* font-weight: 700; */
+    font-size: 29vw;
+    z-index: 1;
+
+}
+
+/* bg-text slidning ends */
+
+
+/* rotate effect start */
+.ticker{
+    position: absolute;
+    margin-top: -183px;
+    margin-left: -150px;
+    /* z-index: 1; */
+
+}
+
+div#ticker-flex:after {
+    background-image: url("../image/baground\ roull.png");
+    filter: brightness(0.91);
+    margin-top: -256px;
+    margin-left: -78px;
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+div#ticker-flex:after,
+div#ticker-flex:before {
+    position: absolute;
+    content: '';
+    height: 550px;
+    width: 550px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    opacity: var(--op-bg);
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* rotare effecr ends */
+
+/* page about */
+.black{
+    background-color: black;
+    color: white;
+    /* border-top-left-radius:10px;
+    border-top-right-radius: 10px; */
+}
+.black .hedding{
+    height: 40vh;
+    position: relative;
+    margin-top: 30px;
+}
+.black h1{
+    font-family: 'myFirstFont';
+    font-size: 15rem;
+    position: absolute;
+    left: 30px;
+    bottom: -40px;
+    /* font-weight: 600; */
+}
+.black  p{
+   padding-top: 42px;
+    color: white;
+    padding-left: 30px;
+    padding-right:  30px;
+
+}
+ .black .aroww{
+    display: none;
+}
+.black .arrow img{
+    display: none;
+}
+/* bg-text sliding start */
+.skil-slider:before {
+    left: 0;
+    width: 20px;
+    background: linear-gradient(to right, #FFEBEE -100%, transparent 100%);
+}
+
+.skil-slider:after {
+    right: 0;
+    width: 20px;
+    background: linear-gradient(to left, #FFEBEE -100%, transparent 100%);
+}
+
+.skil-slider {
+    font-family: 'myFirstFont';
+    padding-top: 40px;
+    /* padding-bottom: 20px; */
+    /* DELIRIUM NEON NCV, DELIRIUM NCV ,Muhaqu*/
+    /* font-weight: 100; */
+    font-size: 35px;
+    z-index: 1;
+
+}
+@media (min-width:780px) {
+    .container.black .hedding{
+        height: 50vh;
+        position: relative;
+    }
+    .container.black h1{
+        font-size:20rem;
+        color: white; 
+        font-family: 'myFirstFont';
+
+        position: absolute;
+        left: 128px;
+        top: 0;
+        /* font-weight: 600px; */
+    }
+    
+    .container .black .about-contant{
+        height: 300px;
+        margin-top: 30px;
+    }
+    .container.black  p{
+        padding-left: 60px;
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-right:  100px;
+    
+    }
+    .container.black .arrow{
+        position: relative;
+        margin-top: 50px;
+    }
+    .container.black .arrow img{
+        position: absolute;
+        display: block;
+        right: 0;
+    }
+    .container.black .last-text{
+        margin-top: 100px;
+       
+    }
+    
+}
+section{
+    margin-top: 60px;
+
+}
+
+/* portfolio page */
+.portfolio-content p {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.portfolio-cercle {
+    max-width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 100px;
+    display: flex;
+    margin-left: auto;
+
+}
+
+.name-cercle {
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    font-family: 'Roboto';
+
+}
+
+
+.portifolio-main P {
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    padding-bottom: 30px;
+}
+
+.main-box{
+    margin: 10px 0 10px 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+/* overflow: hidden; */
+transition: all 1s;
+overflow: hidden;
+position: relative;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #c9c9c9;
+    &:last-of-type {
+border-bottom: 1px dashed #c9c9c9;
+}
+}
+.text-box{
+    position: relative;
+    height: initial;
+    font-family: 'myFirstFont';
+    
+}
+.text-box h1{
+    font-size: 7rem;
+padding-top: 40px;
+}
+.text-box .hide-text{
+    transition: all 1s;
+    width: 453px;
+    background-color: #dadce0;
+height: 50%;
+position: absolute;
+bottom: 0;
+}
+.main-box:hover .hide-text{
+height: 0;
+}
+.main-box:hover{
+height: 150px;
+overflow: visible;
+color: rgb(73, 72, 72);
+
+}
+.image-slide{
+/* position: absolute; */
+height: 200px;
+width: 300px;
+top: -30px;
+right: 200px;
+}
+.img-box-top {
+height: 200px;
+width: 300px;
+overflow: hidden;
+
+position: absolute;
+bottom: 0;
+}
+.hid-img-box {
+top: 100%;
+position: relative;
+transition: all 1s ease-out;
+background-image: url("../image/slide-1.jpg");
+height: 100%;
+}
+.img-box-top .hid-img2-box{
+    background-image: url("../image/slide2.jpg");
+    top: 100%;
+position: relative;
+transition: all 1s ease-out;
+height: 100%;
+}
+.img-box-top .hid-img3-box{
+    background-image: url("../image/slide3.jpg");
+    top: 100%;
+position: relative;
+transition: all 1s ease-out;
+height: 100%;
+}
+
+.main-box:hover .hid-img-box{
+top: 0;
+transition-delay: .3s;
+object-fit: cover;
+border: 10px solid #c9c9c9;
+}
+.main-box:hover .hid-img2-box{
+    top: 0;
+    transition-delay: .3s;
+    object-fit: cover;
+    border: 10px solid #c9c9c9;
+    }
+    .main-box:hover .hid-img3-box{
+        
+        top: 0;
+        transition-delay: .3s;
+        object-fit: cover;
+        border: 10px solid #c9c9c9;
+        
+        }
+
+
+.skil-text{
+margin-right: 30px;
+}
+
+
+/* portfolio page end */
+
+/* slider page */
+.black-page{
+    margin-top: 60px;
+}
+
+.image-slider-bgckrount{
+    width: 100%;
+    
+    background-color: black;
+    color: rgb(87, 87, 87);
+    border-radius: 20px;
+
+}
+.text-active{
+    color: white;
+    letter-spacing: 2px;
+    
+}
+.images-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.images-slider img{
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    animation-delay: 1s;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.text-div{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    padding-left: 80px;
+    font-family: sans-serif;
+}
+.text-div .text-in-slider{
+    position: relative;
+    font-family: 'myFirstFont';
+    line-height: .7;
+    font-size: 8rem;
+    font-weight: 100;
+}
+.peragrap{
+    position: absolute;
+    bottom: 54px;
+    width: 90%;
+    color: #c9c9c9;
+    left: 93px;
+}
+.peragrap p{
+    color: #FFEBEE;
+    
+}
+/* finel page */
+
+.row.wraper{
+    margin-top: 20px;
+}
+
+.end-head {
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+.end-head span {
+    font-weight: 600;
+}
+
+.end-name {
+    font-size: 15.5vw;
+    text-align: center;
+    font-family: 'myFirstFont';
+}
+
+.send-me-btn {
+    border: 2px solid black;
+    border-radius: 15px;
+    color: black;
+    padding: 10px 20px;
+    width: 90%;
+    height: 49px;
+    text-align: center;
+
+}
+
+.send-me-btn a {
+    text-decoration: none;
+    text-align: center;
+}
+
+/* finel page end */
+
+/* FOOTER SECTION START */
+
+.footer-content ul {
+    display: flex;
+    justify-content: end;
+
+}
+
+.footer-content a {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Footer Section End */
+
+/* FOOTER SECTION START */
+
+.footer-content ul {
+    display: flex;
+    justify-content: end;
+
+}
+.footer-content a {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-decoration: none;
+}
+/* Footer Section End */
+
