@@ -111,7 +111,8 @@ header nav {
 .hireme-btn {
     border: 2px solid black;
     border-radius: 11px;
-    padding: 12px 24px;
+    min-width: 110px;
+    padding: 12px 18px;
     margin-right: 12px;
     color: black;
 }
@@ -347,12 +348,12 @@ border-bottom: 1px dashed #c9c9c9;
     
 }
 .text-box h1{
-    font-size: 7rem;
-padding-top: 40px;
+    font-size: 5rem;
+padding-top: 30px;
 }
 .text-box .hide-text{
     transition: all 1s;
-    width: 453px;
+    width: 100%;
     background-color: #dadce0;
 height: 50%;
 position: absolute;
@@ -375,8 +376,10 @@ top: -30px;
 right: 200px;
 }
 .img-box-top {
-height: 200px;
-width: 300px;
+height: 35vh;
+max-height: 200px;
+width: 45vw;
+max-width: 300px;
 overflow: hidden;
 
 position: absolute;
