@@ -24,8 +24,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto ml-auto" id="list">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav  ml-auto pb-2" id="list">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -38,11 +38,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact us</a>
             </li>
+            <a href="" class="d-md-none">
+              <div id="hireme-btn" class="hireme-btn">Hire Me</div>
+            </a>
           </ul>
+          <a href="" class="d-none d-md-block">
+            <div id="hireme-btn" class="hireme-btn">Hire Me</div>
+          </a>
         </div>
-        <a href="">
-          <div id="hireme-btn" class="hireme-btn">Hire Me</div>
-        </a>
+        
       </nav>
     </header>
     <div class="text-panel w3-animate-bottom mt-5 ml-4">
@@ -96,7 +100,7 @@
     <div class="portifolio-main col-12 ml-4">
       <div class="main-box">
         <div class="text-box">
-            <h1>poster design</h1>
+            <h1 >poster design</h1>
             <div class="hide-text"></div>
         </div>
         <div class="image-slide adjest">
@@ -105,7 +109,7 @@
                 </div>
               </div>
         </div>
-        <div class="skil-text">
+        <div class="skil-text d-none d-md-block">
             <h6>poster design</h6>
         </div>
     </div>
@@ -122,7 +126,7 @@
                 </div>
               </div>
         </div>
-        <div class="skil-text">
+        <div class="skil-text d-none d-md-block">
             <h6>logo Design</h6>
         </div>
     </div>
@@ -138,7 +142,7 @@
                 </div>
               </div>
         </div>
-        <div class="skil-text">
+        <div class="skil-text d-none d-md-block">
             <h6>developer</h6>
         </div>
     </div>
@@ -152,16 +156,14 @@
 <div class="container black-page">
   <div class="image-slider-bgckrount">
     <div class="row">
-      <div class="col-md-6 text-div">
+      <div class="col-md-6 text-div d-block">
         
         <h1 id="add-btn" class="text-in-slider" onclick="slideimage(1) ,animateOne()">DEFINE</h1>
         <h1 id="add-btn2" class="text-in-slider" onclick="slideimage(2)">DESIGN</h1>
         <h1 id="add-btn3" class="text-in-slider" onclick="slideimage(3)">DELIVER</h1>
       
-        <div class="peragrap">
-          <p id="display-content" class="pera"></p>
-          
-
+        <div class="">
+          <p id="display-content" class="pera text-light"></p>
         </div>
       </div>
       
@@ -206,7 +208,7 @@
       <div class="row">
         <div class="footer-container col-md-6">
           <div class="container footer-text">
-            <div class="footer-copyright" id="footer-copyright" name="Footer Attribution">
+            <div class="footer-copyright d-flex justify-content-center align-center p-2" id="footer-copyright" name="Footer Attribution">
               <span class="copyright-text">
                 Design by -
                 <a href="">Team Thattipp</a>
@@ -216,7 +218,7 @@
         </div>
 
         <div class="footer-content col-md-6">
-          <ul>
+          <ul class="justify-content-center align-center p-2">
             <li><a href="">Home</a></li>
             <li><a href="">Instagram</a></li>
             <li><a href="">Facebook</a></li>
