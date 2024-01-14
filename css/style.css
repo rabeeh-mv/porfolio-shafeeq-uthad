@@ -259,9 +259,14 @@ div#ticker-flex:before {
     z-index: 1;
 
 }
-@media (max-width:736px) {
+@media (max-width:406px) {
     .black .hedding{
             height: 5rem;
+    }
+}
+@media (max-width:736px) {
+    .black .hedding{
+            height: 8rem;
     }
 }
 @media (min-width:780px) {
