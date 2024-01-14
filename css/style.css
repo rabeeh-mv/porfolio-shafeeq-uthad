@@ -129,13 +129,13 @@ header nav {
     z-index: 2000;
     position: absolute;
 }
-@media (max-width:1000px) {
+@media (max-width:1000px) { 
     .main-image img{top: 10rem;}
 }
-@media (max-width:767px) {
+@media (max-width:767px) { 
     .main-image img{top: 9.5rem;}
 }
-@media (max-width:500px) {
+@media (max-width:500px) { 
     .main-image img{
         top: 5.4rem;
     }
