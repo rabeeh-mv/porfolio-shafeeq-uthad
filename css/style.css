@@ -197,16 +197,17 @@ div#ticker-flex:before {
     border-top-right-radius: 10px; */
 }
 .black .hedding{
-    height: 40vh;
+    height: 20vh;
     position: relative;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .black h1{
     font-family: 'myFirstFont';
-    font-size: 15rem;
+    font-size: 10rem;
     position: absolute;
     left: 30px;
-    bottom: -40px;
+    text-align: center;
+    top: 10px;
     /* font-weight: 600; */
 }
 .black  p{
@@ -263,7 +264,7 @@ div#ticker-flex:before {
     
     .container .black .about-contant{
         height: 300px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
     .container.black  p{
         padding-left: 60px;
