@@ -22,7 +22,7 @@
       btn3.classList.remove('text-active');
       btn2.classList.remove('text-active');
       animateOne();
-      images.src = './image/slide1.jpg';
+      images.src = './image/slide-1.jpg';
       images.style.display = 'block';
       btn.classList.add('text-active');
       btn.style.transition = ' all 1s'
