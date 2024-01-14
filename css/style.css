@@ -202,7 +202,7 @@ div#ticker-flex:before {
     border-top-right-radius: 10px; */
 }
 .black .hedding{
-    height: 20vh;
+    height: 18rem;
     position: relative;
     /* margin-top: 30px; */
 }
@@ -224,7 +224,7 @@ div#ticker-flex:before {
 }
  .black .aroww{
     display: none;
-}ś
+}
 .black .arrow img{
     display: none;
 }
@@ -250,6 +250,11 @@ div#ticker-flex:before {
     font-size: 35px;
     z-index: 1;
 
+}
+@media (max-width:336px) {
+    .hedding{
+        height: 8rem;
+    }
 }
 @media (min-width:780px) {
     .container.black .hedding{
@@ -409,6 +414,7 @@ overflow: visible;
 color: rgb(73, 72, 72);
 
 }
+
 .image-slide{
 /* position: absolute; */
 height: 200px;
@@ -556,6 +562,9 @@ margin-right: 30px;
 @media (max-width:736px) {
     .image-slider-bgckrount{
         position: relative;
+    }
+    .arrow{
+        display: none;
     }
     .image-slider-bgckrount .text-div{
         position: absolute;
