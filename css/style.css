@@ -309,6 +309,20 @@ section{
     margin-left: auto;
 
 }
+@media (max-width:736px) {
+    .portfolio-cercle {
+        /* max-width: 150px; */
+        max-width: 95%;
+        height: 60px;
+        border: 1px solid black;
+        display: flex;
+        /* justify-content: right; */
+        margin-left: 0px;
+        margin: 2px 11px;
+        
+        
+    }
+}
 
 .name-cercle {
     text-align: center;
@@ -351,6 +365,20 @@ border-bottom: 1px dashed #c9c9c9;
 .text-box h1{
     font-size: 5rem;
 padding-top: 30px;
+}
+@media (max-width:736px) {
+    .text-box h1 {
+        font-size: 3rem;
+        padding-top: 10px;}
+        .img-box-top {
+            right: 0;
+        }
+        .portifolio-main{
+            margin-left: 0rem!important;
+        }
+        .image-slide{
+            max-width: 0px;
+        }
 }
 .text-box .hide-text{
     transition: all 1s;
@@ -501,6 +529,34 @@ margin-right: 30px;
     color: #FFEBEE;
     
 }
+@media (max-width:736px) {
+    .image-slider-bgckrount{
+        position: relative;
+    }
+    .image-slider-bgckrount .text-div{
+        position: absolute;
+        bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 2;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    }
+    .text-div .text-in-slider {
+        position: relative;
+        font-family: 'myFirstFont';
+        line-height: .7;
+        font-size: 7rem;
+        font-weight: 100;
+        left: -45px;
+    }
+    .comingpera{
+        margin-left: -35px;
+    }
+    .aroww {
+        display: none;
+    }
+}
 /* finel page */
 
 .row.wraper{
@@ -514,6 +570,16 @@ margin-right: 30px;
 
 .end-head span {
     font-weight: 600;
+}
+@media (max-width:736px) {
+    .end-head {
+        text-align: center;
+    }
+    .send-me-btn{
+        width: 0;
+        width: 100%;
+    }
+    
 }
 
 .end-name {
